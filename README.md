@@ -2,9 +2,7 @@
 
 There are many other ways to achieve parallel process execution on HPC systems but I wanted to sketch out how GNU Parallel can integrate with Slurm.
 
-This examples **do not intend to represent best practice**.
-
-These scripts should absolutely not be used as example of good practice.
+**These scripts should absolutely not be used as example of good practice.**
 
 Rather I just wanted to sketch minimum examples of 2 different approaches to show they each "work".
 
@@ -13,7 +11,7 @@ Rather I just wanted to sketch minimum examples of 2 different approaches to sho
 
 In particular, I wanted to see how to do each of these across more than 1 node.
 
-For anyone wanting to actually see how to do thing kind of thing properly, there are many better example of using GNU Parallel in combination with Slurm which can be revealed by a web search.
+For anyone wanting to actually see how to do thing kind of thing properly, there are **many** better examples of using GNU Parallel in combination with Slurm which can be revealed by a web search.
 
 ## Relevant scripts
 
