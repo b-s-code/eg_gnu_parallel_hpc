@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo hello world
+echo hello from $HOSTNAME at $(date "+%H:%M:%S:%N") >> $HOSTNAME.txt
