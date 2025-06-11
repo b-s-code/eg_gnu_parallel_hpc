@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH --partition work
 #SBATCH --time 02:00
-#SBATCH --mem=1G
+#SBATCH --mem=200G
+#SBATCH --nodes=2
 
-# TODO req. > 1 node.
+# Just happens to be the name of the module for GNU parallel on this system.
+module load parallel/20220522
 
-# TODO do stuff
-
-./dummy_program.sh
+srun --nodes=2 --ntasks=4 --cpus-per-task=1 parallel ./dummy_program.sh {1} ::: dummy_arg1 dummy_arg2

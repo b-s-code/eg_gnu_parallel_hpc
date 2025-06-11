@@ -4,6 +4,7 @@
 #SBATCH --mem=200G
 #SBATCH --nodes=2
 
+# Just happens to be the name of the module for GNU parallel on this system.
 module load parallel/20220522
 
 # Dummy args are unused.  Just employing them to cause multiple processes to be spawned.
