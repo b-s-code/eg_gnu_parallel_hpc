@@ -7,4 +7,5 @@
 # Just happens to be the name of the module for GNU parallel on this system.
 module load parallel/20220522
 
+# Dummy args are unused.  Just employing them to cause multiple processes to be spawned.
 srun --nodes=2 --ntasks=2 --cpus-per-task=1 parallel ./dummy_program.sh {1} ::: dummy_arg1 dummy_arg2
