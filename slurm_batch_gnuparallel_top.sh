@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --partition work
 #SBATCH --time 02:00
-#SBATCH --mem=1G
+#SBATCH --mem=200G
 #SBATCH --nodes=2
 
 module load parallel/20220522
