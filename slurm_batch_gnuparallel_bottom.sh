@@ -7,4 +7,4 @@
 # Just happens to be the name of the module for GNU parallel on this system.
 module load parallel/20220522
 
-srun --nodes=2 --ntasks=4 --cpus-per-task=1 parallel ./dummy_program.sh {1} ::: dummy_arg1 dummy_arg2
+srun --nodes=2 --ntasks=2 --cpus-per-task=1 parallel ./dummy_program.sh {1} ::: dummy_arg1 dummy_arg2
