@@ -32,6 +32,7 @@ def main():
 
     for node_index in range(num_nodes_required):
         salloc_cmd = ['salloc',
+            '--verbose',
             '-p', 'work',
             '-n', '1', # Hopefully the notion of a "task" can largely be ignored and we can just have one task per node.
             '-N', '1', # Important: we only ask for one node at a time.
@@ -43,9 +44,12 @@ def main():
             str(node_index),
             str(NUM_CORES_PER_NODE)
         ]
+        print("salloc_cmd:", salloc_cmd)
 
         # Use Popen instead of run since it is non-blocking.
-        subprocess.Popen(salloc_cmd)
+        subprocess.Popen(salloc_cmd,
+            # Used so that arguments in salloc command like $PAWSEY_PROJECT are interpreted by shell.
+            shell=True)
 
 if __name__ == "__main__":
     main()
