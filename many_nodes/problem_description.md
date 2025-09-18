@@ -4,7 +4,7 @@
 
 Suppose you have more simulations to run than a node has cores.
 
-Suppose you want to run that set of simulations in less human time than it would take using a single node.
+Suppose you want to run that set of simulations *in less human time than it would take using a single node*.
 
 Then you need a way to run more simulations at once than can fit on the cores of a single node.
 
